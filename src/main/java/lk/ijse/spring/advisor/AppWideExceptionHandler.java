@@ -16,7 +16,7 @@ public class AppWideExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler({Exception.class})
     public ResponseUtil exceptionHandler(Exception e) {
-        return new ResponseUtil(500, e.getMessage(), null);
+        return new ResponseUtil(500, e.getMessage(), null, code1, message1, data);
     }
 
 }
